@@ -16,7 +16,6 @@ namespace Snake
 {
 	class VerticalLine: Figure
 	{
-//		List<Point> pList;
 		
 		public VerticalLine(int yTop, int yBottom, int x, char sym)
 		{

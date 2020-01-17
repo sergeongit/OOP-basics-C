@@ -15,7 +15,6 @@ using System.Threading.Tasks;
 namespace Snake
 {
 	
-	
 	public class Figure
 	{
 		protected List<Point> pList;
