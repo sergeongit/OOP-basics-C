@@ -1,8 +1,8 @@
 ﻿/*
  * Created by SharpDevelop.
  * User: Admin
- * Date: 16.01.2020
- * Time: 16:47
+ * Date: 17.01.2020
+ * Time: 09:31
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -14,18 +14,18 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-	class VerticalLine: Figure
+	
+	
+	public class Figure
 	{
-//		List<Point> pList;
+		protected List<Point> pList;
 		
-		public VerticalLine(int yTop, int yBottom, int x, char sym)
-		{
-			pList = new List<Point>();
-			for( int y = yTop; y <= yBottom; y++ )
+		public void Drow()
 			{
-				Point p = new Point(x, y, sym);
-				pList.Add( p );
+				foreach(Point p in pList)
+				{
+					p.Draw();
+				}
 			}
-		}
 	}
 }
