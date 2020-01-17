@@ -7,16 +7,19 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Snake
 {
-	/// <summary>
-	/// Description of Direction.
-	/// </summary>
-	public class Direction
+	
+	enum Direction
 	{
-		public Direction()
-		{
-		}
+		LEFT,
+		RIGHT,
+		UP,
+		DOWN
 	}
 }

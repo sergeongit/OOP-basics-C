@@ -15,7 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace Snake
 {
@@ -28,19 +28,37 @@ namespace Snake
 			
 			
 			HorizontalLine lineTop = new HorizontalLine(1, 88 , 0, '@');
-			lineTop.Drow();
+			lineTop.Draw();
 			HorizontalLine lineBottom = new HorizontalLine(1, 88 , 22, '@');
-			lineBottom.Drow();
+			lineBottom.Draw();
 			
 			VerticalLine lineLeft = new VerticalLine(0, 22 , 0, '@');
-			lineLeft.Drow();
+			lineLeft.Draw();
 			VerticalLine lineRight = new VerticalLine(0, 22 , 88, '@');
-			lineRight.Drow();
+			lineRight.Draw();
 			
-			Point p1 = new Point(8, 8, '*');
-			p1.Draw();
-			
-			Console.ReadLine();
+			Point p = new Point(8, 8, '*');
+			p.Draw();
+			//snake
+			Snake snake = new Snake(p, 4, Direction.RIGHT);
+
+			snake.Draw();
+			snake.Move();
+			Thread.Sleep( 300 );
+			snake.Move();
+			Thread.Sleep( 300 );
+			snake.Move();
+			Thread.Sleep( 300 );
+			snake.Move();
+			Thread.Sleep( 300 );
+			snake.Move();
+			Thread.Sleep( 300 );
+			snake.Move();
+			Thread.Sleep( 300 );
+			snake.Move();
+			Thread.Sleep( 300 );
+			snake.Move();
+			Thread.Sleep( 300 );
 		}
 		
 	}

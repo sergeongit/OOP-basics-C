@@ -15,11 +15,11 @@ using System.Threading.Tasks;
 namespace Snake
 {
 	
-	public class Figure
+	class Figure
 	{
 		protected List<Point> pList;
 		
-		public void Drow()
+		public void Draw()
 			{
 				foreach(Point p in pList)
 				{
